@@ -26,12 +26,13 @@ const App = () => {
     return (
         <div className="container text-center">
             <section className="advice">
-                <h2 className="heading">Advice #{advice?.id}</h2>
+                <h1 className="heading">Advice #{advice?.id}</h1>
                 <p className="quote">
                     &ldquo;{advice?.content}&rdquo;
                 </p>
                 <div className="pattern-container">
-                    <img className="pattern" src="images/pattern-divider-mobile.svg" />
+                    <img className="pattern-mobile" src="images/pattern-divider-mobile.svg" alt="Pattern Mobile" />
+                    <img className="pattern-desktop" src="images/pattern-divider-mobile.svg" alt="Pattern Desktop" />
                 </div>
                 <button className="dice-btn" onClick={handleDiceClick}>
                     <img className="dice" src="images/icon-dice.svg" alt="Dice Icon" height="24" width="24" />

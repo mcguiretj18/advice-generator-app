@@ -107,3 +107,17 @@ body {
     background: #53FFAA;
     box-shadow: 0px 0px 40px #53FFAA;
 }
+
+.pattern-desktop {
+    display: none;
+}
+
+@media screen and (min-width: 900px) {
+    .pattern-mobile {
+        display: none;
+    }
+
+    .pattern-desktop {
+        display: inline;
+    }
+}

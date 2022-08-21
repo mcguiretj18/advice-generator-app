@@ -1,0 +1,109 @@
+:root {
+    --clr-dark-blue: hsl(218, 23%, 16%);
+    --clr-dark-grayish-blue: hsl(217, 19%, 24%);
+    --clr-grayish-blue: hsl(217, 19%, 38%);
+    --clr-light-cyan: hsl(193, 38%, 86%);
+    --clr-neon-green: hsl(150, 100%, 66%);
+}
+
+* {
+    box-sizing: border-box;
+}
+
+body, h2, p {
+    margin: 0;
+}
+
+body {
+    font-family: 'Manrope', sans-serif;
+    font-style: normal;
+    font-weight: 800;
+    background-color: var(--clr-dark-blue);
+    margin: 1rem;
+    margin-top: 120px;
+}
+
+@media screen and (min-width: 900px) {
+    body {
+        margin-top: 223px;
+    }
+}
+
+.container {
+    max-width: 540px;
+    margin: 0 auto;
+}
+
+.advice {
+    position: relative;
+    background-color: var(--clr-dark-grayish-blue);
+    padding: 1.5rem;
+    box-shadow: 30px 50px 80px rgba(0, 0, 0, 0.100202);
+    border-radius: 10px;
+    padding-bottom: 64px;
+    margin-bottom: 64px;
+}
+
+.text-center {
+    text-align: center;
+}
+
+.heading {
+    font-size: 11px;
+    line-height: 15px;
+    letter-spacing: 3.45714px;
+    color: var(--clr-neon-green);
+    text-transform: uppercase;
+    margin-bottom: 1.5rem;
+}
+
+@media screen and (min-width: 900px) {
+    .heading {
+        font-size: 13px;
+        line-height: 18px;
+        letter-spacing: 4.08571px;
+    }
+}
+
+.quote-container {
+    max-width: 444px;
+    margin: 0 auto;
+}
+
+.quote {
+    font-size: 1.5rem;
+    line-height: 33px;
+    letter-spacing: -0.257143px;
+    color: var(--clr-light-cyan);
+    margin-bottom: 1.5rem;
+}
+
+@media screen and (min-width: 900px) {
+    .quote {
+        font-size: 28px;
+        line-height: 38px;
+        letter-spacing: -0.3px;
+        margin-bottom: 40px;
+    }
+}
+
+.dice-btn {
+    background-color: var(--clr-neon-green);
+    padding: 20px;
+    border-radius: 50%;
+    width: fit-content;
+    height: fit-content;
+    /* Not sure why the icon container has a weird height */
+    padding-bottom: 15px;
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+    bottom: -32px;
+    border: none;
+    cursor: pointer;
+}
+
+.dice-btn:hover {
+    background: #53FFAA;
+    box-shadow: 0px 0px 40px #53FFAA;
+}
